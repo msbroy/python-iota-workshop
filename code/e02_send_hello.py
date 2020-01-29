@@ -17,10 +17,12 @@ address = 'TOKLOARHKXQCVPPVVIPIJGLUTLTKFHYGMBBLOXJFYGSARLOTYFFSDZNYCOBOCNPGRMJWZ
 
 tx = ProposedTransaction(
     address=Address(address),
-    message=TryteString.from_unicode('You did it!'),
+    message=TryteString.from_unicode('virtu4lgh0st here :)'),
     tag=Tag('HELLOWORLD'),
     value=0
 )
+
+print(message.root())
 
 tx = api.prepare_transfer(transfers=[tx])
 

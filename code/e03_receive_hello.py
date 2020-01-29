@@ -33,5 +33,8 @@ for trytestring in trytes:
     
     # Get the embedded message from the Signature Mesage Fragment
     message = tx.signature_message_fragment
-    print(message.decode())
+    try:
+        print(message.decode('UTF-8'))
+    except:
+        continue
 
